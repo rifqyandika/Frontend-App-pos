@@ -1,13 +1,10 @@
 <template>
   <div>
     <div class="home">
+    <Navbar title="History" type="history"/>
       <div class="row no-gutters">
-        <div class="col-lg-9 col-md-12 col-sm-12">
-          <Navbar title="Foods Items" type="product"/>
+        <div class="col-lg-12 col-md-12 col-sm-12 mx-auto">
           <Content />
-        </div>
-        <div class="col-lg-3">
-          <Cart />
         </div>
       </div>
     </div>
@@ -15,13 +12,11 @@
 </template>
 <script>
 import Navbar from '../components/Navbar'
-import Cart from '../components/Cart'
-import Content from '../components/Content'
+import Content from '../components/ContentDash'
 
 export default {
   components: {
     Navbar,
-    Cart,
     Content
   }
 }
